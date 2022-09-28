@@ -2,7 +2,7 @@
 Accept a positive integer n, with n > 1n>1, as input from the user and print all the prime factors of n in ascending order.
 """
 
-def isPrime(num):
+def isPrime(num):  # sourcery skip: invert-any-all, use-any
     if num <= 1:
         return False
     for i in range(2, int(num**0.5)+1):
